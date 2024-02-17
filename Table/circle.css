@@ -1,0 +1,26 @@
+body {
+background:url(1.jpg);
+}
+table {
+    border-collapse: separate;
+    border: 5px outset lightgrey;
+
+}
+caption {
+    padding: 10px;
+    color:  #E32636;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    font-weight: bolder;
+}
+th {
+    border: 1px inset lightgrey;
+    background-color: lightgrey;
+    color: #E32636;
+    
+}
+td {
+    border: 1px inset lightgrey;
+    font-weight: bold;
+    padding: 3px 0;
+}

@@ -1,0 +1,16 @@
+caption {
+    color: rgb(159, 104, 63);
+    font-weight: bolder;
+    padding: 0 0 8px;
+}
+th {
+    background-color: lightgrey;
+}
+.main {
+    text-align: justify;
+    font-size: 14px;
+}
+.bolde {
+    font-weight: bolder;
+    font-size: 18px;
+}
