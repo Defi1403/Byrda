@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Установить адаптивную сетку изображений — schoolsw3.com</title>
+  <style>
+  * {
+  box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 800px) {
+   .column {
+     flex: 50%;
+     max-width: 50%;
+   }
+  }
+
+  @media screen and (max-width: 600px) {
+   .column {
+      flex: 100%;
+      max-width: 100%;
+   }
+  }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+  <h1>CSS Установить адаптивную сетку изображений</h1>
+    
+  <p>Измените размер окна браузера, чтобы увидеть эффект отклика.</p>
+  </div>
+  <div class="row"> 
+    <div class="column">
+      <img src="https://clipart-library.com/2023/yco6RpeKi.png" style="width:100%">
+      <img src="https://запчасти-севастополь.рф/wp-content/uploads/2023/03/pngwing.com-52.png" style="width:100%">
+      <img src="https://media.baamboozle.com/uploads/images/790918/1668308159_151790_gif-url.png" style="width:100%">
+      <img src="https://clipart-library.com/2023/yco6RpeKi.png" style="width:100%">
+      <img src="https://запчасти-севастополь.рф/wp-content/uploads/2023/03/pngwing.com-52.png" style="width:100%">
+      <img src="https://media.baamboozle.com/uploads/images/790918/1668308159_151790_gif-url.png" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://clipart-library.com/2023/yco6RpeKi.png" style="width:100%">
+      <img src="https://запчасти-севастополь.рф/wp-content/uploads/2023/03/pngwing.com-52.png" style="width:100%">
+      <img src="https://media.baamboozle.com/uploads/images/790918/1668308159_151790_gif-url.png" style="width:100%">
+      <img src="https://clipart-library.com/2023/yco6RpeKi.png" style="width:100%">
+      <img src="https://запчасти-севастополь.рф/wp-content/uploads/2023/03/pngwing.com-52.png" style="width:100%">
+      <img src="https://media.baamboozle.com/uploads/images/790918/1668308159_151790_gif-url.png" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="https://clipart-library.com/2023/yco6RpeKi.png" style="width:100%">
+      <img src="https://запчасти-севастополь.рф/wp-content/uploads/2023/03/pngwing.com-52.png" style="width:100%">
+      <img src="https://media.baamboozle.com/uploads/images/790918/1668308159_151790_gif-url.png" style="width:100%">
+      <img src="https://clipart-library.com/2023/yco6RpeKi.png" style="width:100%">
+      <img src="https://запчасти-севастополь.рф/wp-content/uploads/2023/03/pngwing.com-52.png" style="width:100%">
+      <img src="https://media.baamboozle.com/uploads/images/790918/1668308159_151790_gif-url.png" style="width:100%">
+    </div>
+    <div class="column">
+    <img src="https://clipart-library.com/2023/yco6RpeKi.png" style="width:100%">
+      <img src="https://запчасти-севастополь.рф/wp-content/uploads/2023/03/pngwing.com-52.png" style="width:100%">
+      <img src="https://media.baamboozle.com/uploads/images/790918/1668308159_151790_gif-url.png" style="width:100%">
+      <img src="https://clipart-library.com/2023/yco6RpeKi.png" style="width:100%">
+      <img src="https://запчасти-севастополь.рф/wp-content/uploads/2023/03/pngwing.com-52.png" style="width:100%">
+      <img src="https://media.baamboozle.com/uploads/images/790918/1668308159_151790_gif-url.png" style="width:100%">
+    </div>
+  </div>
+ </body>
+</html>

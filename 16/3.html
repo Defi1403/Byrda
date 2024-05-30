@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Установить отзывчивые 4 колонки при изменении экрана</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            padding: 20px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 992px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Установить отзывчивые 4 колонки при изменении экрана</h1>
+
+    <p><strong>Измените размер окна браузера, чтобы увидеть эффект отклика</strong>
+    На экранах, которые 992px или меньше, то колонны изменяются от 4 колонок до 2.
+    На экраннах, шириной 600px или меньше столбцы будут располагаться друг над другом, а не рядом друг с другом.</p>
+
+    <div class="row">
+        <div class="column" style="background-color: #aaa;">
+            <h2>Колонка 1</h2>
+            <p>Некоторый текст..</p>
+        </div>
+        <div class="column" style="background-color: #bbb;">
+            <h2>Колонка 2</h2>
+            <p>Некоторый текст..</p>
+        </div>
+        <div class="column" style="background-color: #ccc;">
+            <h2>Колонка 3</h2>
+            <p>Некоторый текст..</p>
+        </div>
+        <div class="column" style="background-color: #ddd;">
+            <h2>Колонка 4</h2>
+            <p>Некоторый текст..</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS изменения цвета фона при изменении экрана</title>
+    <style>
+        body {
+            background-color: tan;
+            color: black;
+        }
+        
+        @media screen and (max-width: 992px) {
+            body {
+                background-color: blue;
+                color: white;
+            }
+        }
+            
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: olive;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS изменения цвета фона при изменении экрана</h1>
+
+    <p>Измените размер окна браузера, чтобы увидеть эффект!</p>
+    <p>По умолчанию, цвет фона документа "tan". Если размер экрана 992px или меньше,
+        цвет изменится на "blue". Если 600px или меньше, он изменится на "olive".</p>
+</body>
+</html>
