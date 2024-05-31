@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+
+    <body>
+        <div class="1">
+            <script>
+                //пример 1
+                document.write(Date());
+            </script>
+            <hr>
+        </div>
+
+        <div class="2">
+            <p>JavaScrpt может написать прямо в HTML выходной поток - в теле документа</p>
+            <script>
+                //пример 2
+                document.write('<h1>Это тег для заголовка</h1>');
+                document.write('<p>Это тег для обозначения параграфа</h1>');
+            </script>
+            <p>Вы можете использовать метод <strong> document.write </strong> в теле выходном HTML
+            Если вы используете этот метод после загрузки документа (например в функции), весь документ будет перезаписан</p>
+            <hr>
+        </div>
+
+        <div class="3">
+            <script>
+                //пример 3
+                var name = 'Василий';
+                var admin = name;
+                document.write(admin);
+            </script>
+            <hr>
+        </div>
+
+        <div class="4">
+            <script>
+                //пример 4
+                var pi = 3.14;
+                var name = 'John Doe';
+                var answer = 'Yes I am!';
+
+                document.write(pi + '<br>');
+                document.write(name + '<br>');
+                document.write(answer + '<br>');
+            </script>
+            <hr>
+        </div>
+
+        <div class="5">
+            <p>Нажмите кнопку для объявления переменной и вывода результата.</p>
+            <button onclick="myFunction()">Try it</button>
+            <p id="demo">Текст помеченый меткой demo</p>
+            <script>
+                function myFunction(){
+                    var carname='Volvo';
+                    document.getElementById('demo').innerHTML=carname;
+                }
+            </script>
+            <hr>
+        </div>
+
+        <div class="6">
+            <script>
+                var person;
+                var car='Volvo';
+
+                document.write(person + "<br>");
+                document.write(car + "<br>");
+                var car = null;
+                document.write(car + "<br>");
+            </script>
+            <hr>
+        </div>
+
+        <div class="7">
+            <script>
+                var person=new Object();
+                person.firstname='John';
+                person.lastname='Doe';
+                person.age=50;
+                person.eyecolor='blue';
+                document.write(person.firstname + " is " + person.age + " years old.");
+            </script>
+        </div>
+
+    </body>
+</html>
